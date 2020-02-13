@@ -25,7 +25,7 @@ export const SearchBar = (props) =>{
     return(
         <div>
         <form onSubmit = {handleSubmit}>
-        <label htmlFor = "name">Add a todo!</label>
+        <label htmlFor = "name">Search:</label>
             <input type = "text" onChange = {handleChange} value = {content}></input>
             <button id = "submit">Submit!</button>
         </form>
