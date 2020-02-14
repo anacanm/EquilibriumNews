@@ -22,11 +22,13 @@ export const SearchBar = (props) =>{
         setContent("");
     }
 
+
+
     return(
-        <div>
+        <div style = {{float:"right"}}>
         <form onSubmit = {handleSubmit}>
-        <label htmlFor = "name">Search:</label>
-            <input type = "text" onChange = {handleChange} value = {content}></input>
+        <label htmlFor = "name" style = {{color:"white"}}>Search:</label>
+            <input type = "text" onChange = {handleChange} value = {content} style = {{border:"none"}}></input>
             <button id = "submit">Submit!</button>
         </form>
         </div>

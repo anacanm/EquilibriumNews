@@ -1,13 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import '../styles/Article.css';
 
 export const Article = (props) =>{
-    //I made this component just to see if it would work. It does, but it's all yours to make good. -anacan
+
+    const [showArticle, setShowArticle] = useState(false);
+    const [frameStyle, setFrameStyle] = useState({
+        display: "none",
+        border: "none",
+        marginLeft: "-2px",
+        padding: "0px"
+    })
+
+    //if the query is updated, closes all articles
+    useEffect(()=>{
+        setShowArticle(false);
+    }, [props.query])
+
+    //if article is clicked, opens or closes the article
+    useEffect(()=>{
+        if(showArticle){setFrameStyle({display:"flex", border: "none"})}
+        else{setFrameStyle({display: "none", border: "none"})}
+    }, [showArticle])
+     
+    
+
 
     return(
-        <div>
-            <h2>{props.a.title}</h2>
+        
+        <div onClick= {() => setShowArticle(!showArticle)} id = "articleTile">
+            <h2 id = "title">{props.a.title}</h2>
             <h3>by {props.a.author}</h3>
-            <p style = {{color: "blue"}}>{props.a.description}</p>
+            <p>{props.a.description}</p>
+            <iframe src = {props.a.url} title = {props.a.title} width = "100%" height = "510px" style = {frameStyle}></iframe>
         </div>
     );
 

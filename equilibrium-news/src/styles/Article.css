@@ -1,0 +1,19 @@
+#articleTile {
+    width: 80%;
+    border-style: solid;
+    border-width: 2px;
+    margin-left: 50px;
+    margin-top: 20px;
+    transition-duration: 0.4s;
+    border-color:#A9A9A9;
+    color: #A9A9A9;
+    background-color:white;
+    cursor: pointer;
+    font-family: "Courier New", Courier, monospace;
+}
+#articleTile:hover{
+    background-color:#A9A9A9;
+    color:white;
+}
+
+
