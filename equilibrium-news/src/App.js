@@ -1,29 +1,25 @@
 import React, { useState } from 'react';
-import { QueriedArticlesContainer } from './containers/QueriedArticlesContainer';
-import { SearchBar } from './components/SearchBar';
-import { TopArticlesContainer } from './containers/TopArticlesContainer';
-import { RecommendedBubbleContainer } from './containers/RecommendedBubbleContainer';
-
+import { TopBarContainer } from './containers/TopBarContainer';
+import { KeywordBubbleContainer } from './containers/KeywordBubbleContainer';
+import { ArticlesContainer } from './containers/ArticlesContainer';
 
 export const App = () => {
     
     const [query, setQuery] = useState("");  
 
-    /**
-    * query is at an initial state of an empty string, rather than setting a default query here, I'm handling defaults in the service to avoid difficulties
-    * there likely won't be any default user-queried display in the final product(since we will be using the home page), but just to let you know -anacan
-    */
-    
+    //to make more KeywordBubbles just add the keyword you want to this array :)
     const keywords = ["politics", "feminism", "technology", "business", "health"];
 
-
+    //Sumaiyah, you'll be working with styling the TopBarContainer and the components within them:  SearchBar and Logo(which acts as a home button to return to trending articles)
+    //Jason, you'll be working with styling the KeywordBubbleContainer and the KeywordBubble component
+    //Lexi, you'll be working with styling the ArticlesContainer and the Article component
+    //any styling you choose not to do in the react file (which you can, it's pretty dope), put into the styles folder please
 
     return(
         <div>
-            <SearchBar setQuery={(setQuery)}/>
-            <RecommendedBubbleContainer setQuery = {(setQuery)} keywords = {keywords}/>
-            <QueriedArticlesContainer query = {query}/>
-            <TopArticlesContainer/>
+            <TopBarContainer setQuery = {setQuery}/>
+            <KeywordBubbleContainer setQuery = {setQuery} keywords = {keywords}/>
+            <ArticlesContainer  query = {query}/>
         </div>
     );
 
