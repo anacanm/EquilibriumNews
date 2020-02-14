@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { QueriedArticlesContainer } from './containers/QueriedArticlesContainer';
 import { SearchBar } from './components/SearchBar';
 import { TopArticlesContainer } from './containers/TopArticlesContainer';
+import { RecommendedBubble } from './components/RecommendedBubble'
 
 
 export const App = () => {
@@ -13,7 +14,9 @@ export const App = () => {
     return(
         <div>
             <SearchBar setQuery={(setQuery)}/>
-            <QueriedArticlesContainer query = {query}/> 
+            <RecommendedBubble setQuery = {(setQuery)} keyword = "politics"/>
+            <RecommendedBubble setQuery = {(setQuery)} keyword = "feminism"/>
+            <QueriedArticlesContainer query = {query}/>
             <TopArticlesContainer/>
         </div>
     );
