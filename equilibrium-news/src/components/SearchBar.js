@@ -15,7 +15,7 @@ export const SearchBar = (props) =>{
     {
         e.preventDefault();
         let trimmedContent = content.trim();
-        if(trimmedContent.length!== 0 && trimmedContent)
+        if(trimmedContent.length !== 0 && trimmedContent)
         {
             props.setQuery(trimmedContent);
         }
