@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import "../styles/Articles.css";
 
 export const Article = (props) =>{
     //I made this component just to see if it would work. It does, but it's all yours to make good. -anacan
