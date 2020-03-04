@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { TopBarContainer } from './containers/TopBarContainer';
 import { KeywordBubbleContainer } from './containers/KeywordBubbleContainer';
 import { ArticlesContainer } from './containers/ArticlesContainer';
+import { AboutUs } from './components/AboutUs';
 
 export const App = () => {
     
@@ -20,6 +21,7 @@ export const App = () => {
             <TopBarContainer setQuery = {setQuery} query = {query}/>
             <KeywordBubbleContainer setQuery = {setQuery} keywords = {keywords}/>
             <ArticlesContainer  query = {query}/>
+            {/* <AboutUs/> */}
         </div>
     );
 
