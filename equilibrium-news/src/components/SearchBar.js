@@ -22,11 +22,16 @@ export const SearchBar = (props) =>{
         }
         setContent("");
     }
+
+    const homeStyle = {
+        top: "5",
+        right: "5",
+        position: "fixed"
+    }
+
     const labelStyle = {
       postion: "fixed",
-      fontSize: "15px",
-      color: "black",
-      marginRight: "4px"
+ 
 
     }
     const inputStyle = {
@@ -50,7 +55,7 @@ export const SearchBar = (props) =>{
     }
 
     return(
-        <div >
+        <div style = {homeStyle}>
         <form onSubmit = {handleSubmit}>
         <label htmlFor = "name" style = {labelStyle}>Search:</label>
             <input type = "text" onChange = {handleChange} value = {content} style = {inputStyle}></input>
