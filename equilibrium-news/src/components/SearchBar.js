@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "../styles/SearchBar.css";
 
 
 export const SearchBar = (props) =>{
@@ -49,7 +50,7 @@ export const SearchBar = (props) =>{
     }
 
     return(
-        <div>
+        <div >
         <form onSubmit = {handleSubmit}>
         <label htmlFor = "name" style = {labelStyle}>Search:</label>
             <input type = "text" onChange = {handleChange} value = {content} style = {inputStyle}></input>

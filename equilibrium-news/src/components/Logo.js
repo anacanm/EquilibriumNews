@@ -1,9 +1,10 @@
 import React from 'react';
-import logo from '../styles/Otto.jpg'
-//replace the Otto.jpg in the styles folder and in the line above with the logo once it's made
+import logo from '../styles/EQlogo.png'
+import "../styles/Logo.css";
+
 
 export const Logo = (props) =>{
     return (
-        <img src = {logo} alt = "abc" onClick = {() => props.setQuery("")} width = "150" height = "200"/>
+        <img src = {logo} alt = "abc" onClick = {() => props.setQuery("")} width = "687" height = "200"/>
     );
 }

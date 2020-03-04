@@ -11,7 +11,7 @@ export const ArticlesContainer = (props) => {
 
       return(
         <div>
-          {articles.map( a => <Article a = {a}/>)}
+          {articles.map( a => <Article a = {a} key = {Math.random()}/>)}
         </div>
       );
 }
