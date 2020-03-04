@@ -1,6 +1,8 @@
 import React from 'react';
 import { Logo } from './Logo'
 
+import { Link } from 'react-router-dom'
+
 export const AboutUs = () => {
     const aboutStyle = {
         fontFamily: "Bree Serif",
@@ -10,7 +12,9 @@ export const AboutUs = () => {
     }
     return (
         <div style={aboutStyle}>
+            <Link to = "/">
             <Logo setQuery = {() => {}}/>
+            </Link>
             <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet"></link>
             <h1 style={{ marginBottom: "40px" }}>About Us</h1>
 
