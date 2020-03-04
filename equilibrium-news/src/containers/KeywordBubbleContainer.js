@@ -3,7 +3,7 @@ import { KeywordBubble } from '../components/KeywordBubble';
 
 export const KeywordBubbleContainer = (props) => {
     //updated KeywordBubbleContainer to make it more readable and usable :) -anacan
-
+    
     const containerStyle = {
       position: "sticky",
       float: "right",
@@ -16,7 +16,6 @@ export const KeywordBubbleContainer = (props) => {
     return (
 
     <div style = {containerStyle}>
-
         {props.keywords.map( a => <KeywordBubble setQuery = {props.setQuery} a = {a} key = {Math.random()}/>)}
     </div>
     );

@@ -13,14 +13,11 @@ export const KeywordBubble = (props) =>{
         backgroundColor: "#696969",
         borderColor: "#4d4d4d",
         borderStyle: "outset",
-        borderWidth: "5px"
-        // color: "#f5f5f5",
-        // fontSize: "14px",
-        // position: "sticky",
-        // top: "300px",
-        // float: "right",
-        // clear: "right",
-        // margin: "10px",
+        borderWidth: "5px",
+        color: "#f5f5f5",
+        fontSize: "14px",
+        margin: "10px",
+        cursor: "pointer"
     }
 
     return(
