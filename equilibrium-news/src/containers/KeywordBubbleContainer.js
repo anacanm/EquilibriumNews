@@ -6,7 +6,7 @@ export const KeywordBubbleContainer = (props) => {
     
     return (
     <div>
-        {props.keywords.map( a => <KeywordBubble setQuery = {props.setQuery} a = {a}/>)}
+        {props.keywords.map( a => <KeywordBubble setQuery = {props.setQuery} a = {a} key = {Math.random()}/>)}
     </div>
     );
 }
