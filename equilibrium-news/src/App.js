@@ -17,7 +17,7 @@ export const App = () => {
 
     return(
         <div>
-            <TopBarContainer setQuery = {setQuery}/>
+            <TopBarContainer setQuery = {setQuery} query = {query}/>
             <KeywordBubbleContainer setQuery = {setQuery} keywords = {keywords}/>
             <ArticlesContainer  query = {query}/>
         </div>
