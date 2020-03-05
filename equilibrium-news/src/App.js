@@ -4,7 +4,7 @@ import { KeywordBubbleContainer } from './containers/KeywordBubbleContainer';
 import { ArticlesContainer } from './containers/ArticlesContainer';
 import { AboutUs } from './components/AboutUs';
 
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 export const App = () => {
 
