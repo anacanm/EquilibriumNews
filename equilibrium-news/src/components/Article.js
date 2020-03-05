@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import "../styles/Articles.css";
 // import Iframe from 'react-iframe'
 
-export const Article = (props) =>{
+export const Article = (props) => {
 
   const [showArticle, setShowArticle] = useState(false);
   const [frameStyle, setFrameStyle] = useState({
@@ -25,18 +25,18 @@ export const Article = (props) =>{
     }
 
     function noAuthor(props) {
-      return <h3> </h3>;
-    }
+    return <h3> </h3>;
+  }
 
-    function authorCheck(props) {
-      if (props.a.author === null) {
-        return noAuthor(props);
-      }
-      else if (props.a.author === "") {
-        return noAuthor(props);
-      }
-      return isAuthor(props);
+  function authorCheck(props) {
+    if (props.a.author === null) {
+      return noAuthor(props);
     }
+    else if (props.a.author === "") {
+      return noAuthor(props);
+    }
+    return isAuthor(props);
+  }
 
     useEffect(()=>{
         setShowArticle(false);
