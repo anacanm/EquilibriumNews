@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-export const KeywordBubble = (props) =>{
+export const KeywordBubble = (props) => {
 
     //below is the basic button styling I made to be able to see the buttons, this won't exist (here at least) when you're done -anacan
     const buttonStyle = {
@@ -18,13 +18,11 @@ export const KeywordBubble = (props) =>{
         fontSize: "14px",
         margin: "10px",
         cursor: "pointer",
-
         borderRadius: "50%",
         width: "120px",
         height: "75px",
         backgroundColor: "blue",
         color: "white",
-
         borderRadius: "50px",
         width: "120px",
         height: "75px",
@@ -40,9 +38,9 @@ export const KeywordBubble = (props) =>{
         // outlineColor: "grey"
     }
 
-    return(
+    return (
         <div>
-            <button onClick = {() => props.setQuery(props.a)} style = {buttonStyle}>{props.a}</button>
+            <button onClick={() => props.setQuery(props.a)} style={buttonStyle}>{props.a}</button>
         </div>
     );
 }
