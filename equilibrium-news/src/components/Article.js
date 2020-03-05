@@ -42,7 +42,7 @@ export const Article = (props) =>{
             <h2 style={{color: 'black'}}> {props.a.title}</h2>
             <h3 style={{color: 'darkgray'}}> by {props.a.author}</h3>
             <p style={{color: 'gray'}}> {props.a.description}</p>
-            <Iframe url = {props.a.url} width="450px" height="450px" id="myId" className="myClassname" display="initial" position="relative" onload="iframeclick()" />
+            <Iframe url = {props.a.url} width="450px" height="450px" id="myId" className="myClassname" display="initial" position="relative" textAlight="center" onload="iframeclick()" />
             </div>
         </div>
     );
