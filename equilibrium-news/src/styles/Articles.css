@@ -19,6 +19,19 @@ img {
   border: 0;
 }
 
+.innerFrame {
+  float: left;
+}
+
+.iFrame {
+  display: inline-block;
+  width: 80%;
+}
+
+.style{
+  display: true;
+}
+
 .break {
   font-size: 0;
   width: 0; height: 0;
@@ -167,4 +180,3 @@ img {
       margin-bottom: 5px;
     }
 /** END content **/
-

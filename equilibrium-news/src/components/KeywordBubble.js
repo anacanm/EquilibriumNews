@@ -22,8 +22,20 @@ export const KeywordBubble = (props) => {
         width: "120px",
         height: "75px",
         backgroundColor: "blue",
-        color: "white"
-
+        color: "white",
+        borderRadius: "50px",
+        width: "120px",
+        height: "75px",
+        backgroundColor: "black",
+        color: "white",
+        right: "50px",
+        top: "50px",
+        float: "right",
+        // padding: "10px",
+        position: "static",
+        clear: "right",
+        // outlineStyle: "dotted",
+        // outlineColor: "grey"
     }
 
     return (
