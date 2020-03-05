@@ -27,7 +27,7 @@ export const Article = (props) =>{
             <h2>{props.a.title}</h2>
             <h3>{authorCheck(props)}</ h3>
             <p style = {{color: "blue"}}>{props.a.description}</p>
-            <Iframe url={props.a.url} position="absolute" width="100%" id="myId" className="myClassname"}/>
+            <Iframe url={props.a.url} position="absolute" width="100%" id="myId" className="myClassname"/>
         </div>
     );
 
