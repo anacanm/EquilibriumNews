@@ -29,12 +29,23 @@ export const Article = (props) =>{
       }
       return isAuthor(props);
     }
-    
-    function iframeclick() {
-        document.getElementById("myId").contentWindow.document.body.onclick = function() {
-            document.getElementById("myId").contentWindow.location.reload();
-    }
-}
+
+  //   constructor(props.a.url);{
+  //     super()
+  //     this.state = {
+  //       showMe: false,
+  //   }
+  // }
+
+  // operation();{
+  //   this.setState({
+  //     showMe: true
+  //   })
+  // }
+// function toShow() {
+//   var iframe = document.getElementById('myId');
+//   iframe.style.display = 'block';
+// }
 
     return(
         <div className="iFrame">
@@ -42,7 +53,10 @@ export const Article = (props) =>{
             <h2 style={{color: 'black'}}> {props.a.title}</h2>
             <h3 style={{color: 'darkgray'}}> by {props.a.author}</h3>
             <p style={{color: 'gray'}}> {props.a.description}</p>
-            <Iframe url = {props.a.url} width="450px" height="450px" id="myId" className="myClassname" display="initial" position="relative" textAlight="center" onload="iframeclick()" />
+            <div className="url">
+            <Iframe url = {props.a.url} width="450px" height="450px" id="myId" className="myClassname" display="initial" position="center" />
+            // <button onClick={()=>this.toShow()}> {props.a.title} </button>
+            </div>
             </div>
         </div>
     );

@@ -15,18 +15,22 @@
   display: true;
 }
 
+.url{
+  display: none;
+}
+
 .break {
   font-size: 0;
   width: 0; height: 0;
   clear: both;
 }
-/*.alignleft {
+.alignleft {
   float: left;
   margin: 4px 10px 5px 0;
 }
 .alignright {
   float: right;
-  margin: 4px 0 5px 10px;*/
+  margin: 4px 0 5px 10px;
 }
 .aligncenter {
   text-align: center;
