@@ -22,39 +22,39 @@ export const SearchBar = (props) =>{
         }
         setContent("");
     }
-    const labelStyle = {
-      postion: "fixed",
-      fontSize: "15px",
-      color: "black",
-      marginRight: "4px"
 
+    const homeStyle = {
+        top: "15px",
+        right: "15px",
+        position: "fixed"
     }
-    const inputStyle = {
-      postion: "fixed",
-      borderColor:"grey",
-      fontSize: "15px"
 
+    const inputStyle = {
+        width: "200px",
+        height: "30px",
+        fontSize: "20px",
+        backgroundColor: "lightGrey 0.9",
+        borderRadius: "10px",
+        borderColor: "lightGrey 0.3",
+        visibility: "visible",
+        paddingLeft: "10px",
+        fontColor: "grey"
     }
     const buttonBarStyle = {
-      postion: "fixed",
-      fontSize: "15px",
-      borderRadius: "2px",
-      borderStyle: "outset",
-      borderColor: "grey",
-      marginLeft: "5px",
-      fontSize: "15px",
-
-
-
+        width: "50px",
+        height: "25px",
+        borderRadius: "5px",
+        marginBottom: "10px",
+        borderColor: "lightGrey",
+        borderOutline: "none"
 
     }
 
     return(
-        <div >
+        <div style = {homeStyle}>
         <form onSubmit = {handleSubmit}>
-        <label htmlFor = "name" style = {labelStyle}>Search:</label>
-            <input type = "text" onChange = {handleChange} value = {content} style = {inputStyle}></input>
-            <button id = "submit" style = {buttonBarStyle}>Submit!</button>
+            <input placeholder = "Search" type = "text" onChange = {handleChange} value = {content} style = {inputStyle}></input>
+            <button id = "submit" style = {buttonBarStyle}>Submit</button>
         </form>
         </div>
 
