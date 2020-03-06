@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 export const AboutUs = () => {
     const aboutStyle = {
-        fontFamily: "Bree Serif",
         fontWeight: "10",
         textAlign: "center",
         padding: "2% 10% 10% 10%" 

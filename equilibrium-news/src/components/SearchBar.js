@@ -24,28 +24,30 @@ export const SearchBar = (props) =>{
 
     const homeStyle = {
         top: "15px",
-        right: "15px",
+        right: "10px",
         position: "fixed"
     }
 
     const inputStyle = {
         width: "200px",
         height: "30px",
-        fontSize: "20px",
-        backgroundColor: "lightGrey 0.9",
-        borderRadius: "10px",
-        borderColor: "lightGrey 0.3",
-        visibility: "visible",
-        paddingLeft: "10px",
-        fontColor: "grey"
+        fontSize: "18px",
+        borderWidth: "5px",
+        borderColor: "darkgray",
+        paddingLeft: "5px",
+        fontColor: "darkgray",
+        borderStyle: "solid"
     }
     const buttonBarStyle = {
         width: "50px",
         height: "25px",
-        borderRadius: "5px",
+        borderWidth: "2px",
         marginBottom: "10px",
-        borderColor: "lightGrey",
-        borderOutline: "none"
+        borderColor: "darkgray",
+        borderOutline: "none",
+        marginLeft: "5px",
+        fontColor: "darkgray",
+        justifyContent: "center"
 
     }
 
