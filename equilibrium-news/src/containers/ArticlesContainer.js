@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import { getArticles } from '../services/newsAPI';
 import { Article } from '../components/Article';
-// import Iframe from 'react-iframe'
+
 
 export const ArticlesContainer = (props) => {
     const [articles, setArticles] = useState([]);
