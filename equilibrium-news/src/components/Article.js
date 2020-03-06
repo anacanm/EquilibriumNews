@@ -1,7 +1,6 @@
 import ReactDOM from 'react-dom';
 import React, { useEffect, useState } from 'react';
 import "../styles/Articles.css";
-// import Iframe from 'react-iframe'
 
 export const Article = (props) => {
 
