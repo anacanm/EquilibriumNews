@@ -13,7 +13,11 @@ export const ArticlesContainer = (props) => {
               duplicateArray.push(articles[i]);
           }
       }
-  }
+    }
+    
+    const containerStyle = {
+      top: "20px"
+    }
     getDuplicate(articles);
 
     useEffect(() => {
@@ -21,7 +25,7 @@ export const ArticlesContainer = (props) => {
       }, [props.query]);
 
       return(
-        <div>
+        <div style = {{containerStyle}}>
           {articles.map( a => <Article a = {a} query = {props.query} key = {Math.random()}/>)}
         </div>
       );

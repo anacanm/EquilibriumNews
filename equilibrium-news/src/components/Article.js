@@ -49,7 +49,7 @@ export const Article = (props) => {
 
     return(
         <div className="iFrame">
-        	<div className="innerFrame">
+        	<div className="innerFrame" style = {{top: "5px"}}>
           <div onClick= {() => setShowArticle(!showArticle)} id = "articleTile" style = {{paddingLeft: "10px"}}>
             <h2 style={{color: 'black'}}> {props.a.title}</h2>
             <h3 style={{color: 'darkgray'}}> by {props.a.author}</h3>
