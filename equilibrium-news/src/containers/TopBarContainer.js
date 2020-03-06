@@ -16,19 +16,13 @@ export const TopBarContainer = (props) => {
         title = burner.charAt(0).toUpperCase() + burner.substring(1);
     }
 
-    let aboutButtonStyle = {
-        height:"50px",
-        width: "50px",
-        color: "red"
-    }
-
     return (
         <div>
             <Logo setQuery={props.setQuery} />
             <SearchBar setQuery={props.setQuery} />
             <h1 style={{ color: "black",textAlign: "center" }}>{title} News</h1>
-            <Link to="/about" style = {{textAlign: "center"}}>
-                <button id = "about">About Us</button>
+            <Link to="/about">
+                <button id = "about" >About Us</button>
             </Link>
         </div>
     );
