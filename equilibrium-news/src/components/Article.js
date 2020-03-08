@@ -12,12 +12,6 @@ export const Article = (props) => {
         padding: "0px"
     })
 
-  const articleStyle = {
-        fontFamily: "Bree Serif",
-        fontWeight: "normal",
-        textAlign: "center",
-        padding: "2% 10% 10% 10%",
-    }
 
     function isAuthor(props) {
       return <h3>by {props.a.author}</h3>;
